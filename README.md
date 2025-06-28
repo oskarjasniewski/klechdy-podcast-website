@@ -6,7 +6,7 @@ A simple, elegant website for the Klechdy podcast, inspired by the design of the
 
 - **Responsive Design**: Works beautifully on desktop, tablet, and mobile devices
 - **Dark Theme**: Atmospheric design with elegant typography
-- **Platform Links**: Direct links to Apple Podcasts, Spotify, and YouTube
+- **Platform Links**: Direct links to Apple Podcasts, Spotify, YouTube, and RSS
 - **Fast Loading**: Minimal, optimized code for quick loading times
 - **SEO Optimized**: Proper meta tags and structure for search engines
 
@@ -52,13 +52,16 @@ Edit the `index.html` file and update these URLs with your actual podcast links:
 
 ```html
 <!-- Apple Podcasts -->
-<a href="https://podcasts.apple.com/podcast/klechdy-folklor-i-legendy-polskie">
+<a href="https://podcasts.apple.com/pl/podcast/klechdy-folklor-i-legendy-polskie/id1810066954">
 
 <!-- Spotify -->
-<a href="https://open.spotify.com/show/klechdy-folklor-i-legendy-polskie">
+<a href="https://open.spotify.com/show/0ajxibUlJxiPRo7UmDlpxW">
 
 <!-- YouTube -->
-<a href="https://youtube.com/@klechdy">
+<a href="https://www.youtube.com/@klechdy.podcast">
+
+<!-- RSS -->
+<a href="https://anchor.fm/s/1038ec2b4/podcast/rss">
 ```
 
 ### Styling Changes

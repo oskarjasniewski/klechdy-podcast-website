@@ -147,6 +147,11 @@ body {
     color: #ff0000;
 }
 
+.platform-link.rss:hover {
+    border-color: #ff9500;
+    color: #ff9500;
+}
+
 /* Footer */
 .footer {
     text-align: center;
