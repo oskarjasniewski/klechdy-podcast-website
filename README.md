@@ -6,7 +6,7 @@ A simple, elegant website for the Klechdy podcast, inspired by the design of the
 
 - **Responsive Design**: Works beautifully on desktop, tablet, and mobile devices
 - **Dark Theme**: Atmospheric design with elegant typography
-- **Platform Links**: Direct links to Apple Podcasts, Spotify, YouTube, and RSS
+- **Platform Links**: Direct links to Spotify, Apple Podcasts (with official logo), and YouTube
 - **Fast Loading**: Minimal, optimized code for quick loading times
 - **SEO Optimized**: Proper meta tags and structure for search engines
 
@@ -75,6 +75,8 @@ All styling is contained in `style.css`. The design uses:
 ```
 ├── index.html          # Main HTML file
 ├── style.css          # All styling
+├── klechdy.png         # Main podcast logo
+├── applepodcasts.png   # Apple Podcasts logo
 ├── netlify.toml       # Netlify configuration
 └── README.md          # This file
 ```
