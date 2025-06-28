@@ -4,6 +4,14 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Enable Git Gateway for CMS
+[context.production]
+  command = "echo 'No build needed'"
+
+# Enable Identity for CMS authentication
+[template.environment]
+  NETLIFY_IDENTITY_WIDGET = ""
+
 [[headers]]
   for = "/*"
   [headers.values]

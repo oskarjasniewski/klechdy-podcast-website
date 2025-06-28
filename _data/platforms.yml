@@ -1,0 +1,13 @@
+platforms:
+  - name: "Spotify"
+    url: "https://open.spotify.com/show/0ajxibUlJxiPRo7UmDlpxW"
+    icon: "spotify"
+  - name: "Apple Podcasts"
+    url: "https://podcasts.apple.com/pl/podcast/klechdy-folklor-i-legendy-polskie/id1810066954"
+    icon: "apple"
+  - name: "YouTube"
+    url: "https://www.youtube.com/@klechdy.podcast"
+    icon: "youtube"
+  - name: "RSS"
+    url: "https://anchor.fm/s/1038ec2b4/podcast/rss"
+    icon: "rss"

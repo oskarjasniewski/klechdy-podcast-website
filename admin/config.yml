@@ -1,0 +1,67 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Site Info"
+        name: "site"
+        file: "_data/site.yml"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Host Name", name: "host", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
+
+      - label: "Platform Links"
+        name: "platforms"
+        file: "_data/platforms.yml"
+        fields:
+          - label: "Platforms"
+            name: "platforms"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - {
+                  label: "Icon",
+                  name: "icon",
+                  widget: "select",
+                  options: ["spotify", "apple", "youtube", "rss"],
+                }
+
+  - name: "episodes"
+    label: "Episodes"
+    folder: "_episodes"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Episode Number", name: "episode", widget: "number" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Audio URL", name: "audio_url", widget: "string" }
+      - { label: "Duration", name: "duration", widget: "string" }
+      - {
+          label: "Featured",
+          name: "featured",
+          widget: "boolean",
+          default: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "content"
+    label: "Content Pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "_data/about.yml"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
